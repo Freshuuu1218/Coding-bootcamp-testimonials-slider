@@ -103,3 +103,77 @@ main img{
     left: -1em;
     width: 80%;
 }
+
+@media (min-width: 768px) {
+    main {
+        height: 100vh;
+        flex-direction: row-reverse;
+        padding: 2em;
+    }
+    #image-section {
+        right: 5em;
+        position: absolute;
+        width: 45%;
+        padding: 2em;
+        margin-bottom: 0;
+    }
+    #image-section .person {
+        width: 100%;
+        padding: 2em;
+    }
+    #image-section .person img {
+        z-index: 0;
+        position: relative;
+        width: 95%;
+        margin-top: .25em;
+        border-radius: .5em;
+        bottom: 0;
+        left: 0;
+    }
+    #image-section .swapper {
+        top: 90%;
+        left: 30%;
+        width: 17.5%;
+        padding: 1em 1.25em;
+        box-shadow: 5px 5px 60px rgba(0, 0, 0, .45);
+    }
+    #image-section .swapper img {
+        z-index: 100;
+        position: relative;
+        width: 20%;
+        bottom: 0;
+        left: 0;
+    }
+    #quotes-section {
+        left: 5.5em;
+        position: absolute;
+        z-index: 100;
+        width: 46%;
+        font-size: 2.1em;
+        text-align: left;
+    }
+    #quotes-section img {
+        top: -5%;
+        left: 24%;
+    }
+    .author {
+        margin-top: 1em;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    strong {
+        font-size: .7em;
+        margin-top: 0;
+        margin-right: .5em;
+    }
+    small {
+        margin-top: 0;
+        font-size: .6em;
+    }
+    main img {
+        bottom: -1em;
+        left: -2em;
+        width: 50%;
+    }
+}
