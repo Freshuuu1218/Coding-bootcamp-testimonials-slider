@@ -7,6 +7,7 @@
 }
 .vanish{
     display: none;
+    opacity: 0;
 }
 main{
     display: flex;
@@ -58,6 +59,34 @@ padding: 2em;
     width: 20%;
     bottom: 0;
     left: 0;
+}
+#john-img,
+#tanya-img{
+    animation: showIMG 1s ease;
+}
+.slideOne,
+.slideTwo{
+    animation: showTEXT 1s ease;
+}
+@keyframes showIMG{
+    0%{
+        opacity: 0;
+        transform: translate(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+@keyframes showTEXT{
+    0%{
+        opacity: 0;
+        transform: translate(120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 #quotes-section{
     font-family: 'Inter',sans-serif;
